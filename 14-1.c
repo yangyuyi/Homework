@@ -23,13 +23,13 @@ int main(){
         if (!strcmp(st[i].gender, "male")){
             numm++;
             totm+=st[i].score;
-} else{
-numf++;
-totf+=st[i].score;
-}
-}
-printf("%.2f\n",totm/numm);
-printf("%.2f\n",totf/numf);
-return 0;
+        } else{
+            numf++;
+            totf+=st[i].score;
+        }
+    }
+    printf("%.2f\n",totm/numm);
+    printf("%.2f\n",totf/numf);
+    return 0;
 }
 
