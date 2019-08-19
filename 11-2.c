@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-bool isPrime(int x);
+int isPrime(int x);
 int main(){
     int num=0;
     int i;
@@ -13,10 +13,10 @@ int main(){
     }
     return 0;
 }
-bool isPrime(int x){
+int isPrime(int x){
     int i;
-    if (x==1) return false;
+    if (x==1) return 0;
     for (i=2;i<=floor(sqrt(x));i++)
-        if (x%i==0) return false;
-    return true;
+        if (x%i==0) return 0;
+    return 1;
 }
